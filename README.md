@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# 🐾 WildTrace: Illegal Wildlife Trade Alert System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Problem Statement
+Illegal wildlife trade is one of the biggest threats to endangered species, yet most people don’t know how to report suspicious activity.
 
-## Available Scripts
+## ✅ Solution
+A **web or mobile app** that enables users to:
+- 📸 **Report** suspected illegal wildlife trade with photos and location.
+- 📚 **Get educated** on how to identify illegal wildlife products (e.g., ivory, exotic pets).
+- 🚨 **Receive alerts** about known illegal trading hotspots.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌍 SDG Alignment
+WildTrace supports the **United Nations Sustainable Development Goals (SDGs)**:
+- **🦁 SDG 15: Life on Land** – Protects biodiversity and endangered species.
+- **⚖️ SDG 16: Peace, Justice, and Strong Institutions** – Strengthens law enforcement against wildlife crime.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔗 Five P’s of Sustainability
 
-### `npm test`
+### 1️⃣ People (Social Impact)
+- Empowers individuals to **take action** against wildlife crime.
+- Educates communities about the **consequences of illegal wildlife trade**.
+- Helps law enforcement and conservation groups by **crowdsourcing reports**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2️⃣ Planet (Environmental Impact)
+- Supports **wildlife conservation** by preventing poaching and illegal trade.
+- Protects **endangered species** from exploitation.
+- Helps preserve **biodiversity** by reducing demand for illegal wildlife products.
 
-### `npm run build`
+### 3️⃣ Prosperity (Economic Sustainability)
+- Encourages **ethical and sustainable wildlife tourism**.
+- Supports **eco-friendly businesses** by raising awareness about ethical wildlife trade alternatives.
+- Helps governments and conservation groups **allocate resources effectively**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4️⃣ Peace (Institutional & Legal Impact)
+- Strengthens the fight against **organized crime in wildlife trafficking**.
+- Provides a **structured, anonymous way** to report illegal activity.
+- Contributes to global enforcement of **wildlife protection laws (CITES, national regulations)**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5️⃣ Partnerships (Collaboration & Global Impact)
+- Encourages collaboration between **government agencies, conservation organizations, and the public**.
+- Integrates with **NGOs and law enforcement** for real-time action.
+- Utilizes **open data and APIs** to enhance transparency in wildlife crime tracking.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 MVP 1: Core Features (Essential for Demo)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ✅ **User Reporting System (CRUD)**
+Users can submit a report with:
+- 📸 **Photo evidence** of suspected illegal wildlife trade.
+- 📍 **Location tracking** (Google Maps API for geotagging).
+- 📝 **Short description** of the incident.
+- 📂 **Stored reports** in Firebase (NoSQL DB for fast setup).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅ **Educational Awareness Page**
+A quick-access guide on:
+- **How to identify illegal wildlife products** (e.g., ivory, exotic pets, rare plants).
+- **Laws and penalties** for illegal wildlife trade.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ✅ **Basic Dashboard for Authorities**
+- 🗺️ **Map View:** Display submitted reports visually.
+- 📋 **Report List:** Filter reports by **location and time**.
+- 💻 **Tech Stack:** React UI + Firebase Firestore for fast retrieval.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### ✅ **User Authentication **
+- 🔑 Simple **email/password login**
+- 👤 **Guest reporting option** (no login required).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Tech Stack
+- **Frontend:** React / Flutter
+- **Backend:** Firebase Firestore (NoSQL)
+- **Auth:** Firebase Authentication
+- **Maps API:** Google Maps (for geolocation)
+- **Hosting:** Firebase Hosting
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📌 Future Enhancements
+- 🕵️ **AI-powered image recognition** for detecting illegal wildlife products.
+- 📊 **Advanced analytics dashboard** for authorities.
+- 📡 **Integration with law enforcement and NGOs** for real-time reporting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 👥 Contributors
+- **Shivam Soni**
+- **Nisarg Dolasiya**
+- **Dalia Chicrigin**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 🎯 Join the Fight Against Illegal Wildlife Trade! 🦏🌱
+💡 **Every report makes a difference.** Let’s protect our planet together. 🌍✨
