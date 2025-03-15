@@ -1,0 +1,113 @@
+/* 📌 Background Image Styling */
+.home-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/background.png") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 📌 Overlay for Better Readability */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 143, 54, 0.4); /* Green overlay for better readability */
+  z-index: 1;
+}
+
+/* 📌 Full-width Banner */
+.banner-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.home-banner {
+  width: 75%;
+  max-width: 850px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+/* 📌 Main Content Layout */
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto 40px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+/* 📌 Background Box for Text */
+.text-section, .welcome-section {
+  flex: 1;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 📌 Heading Styles */
+.text-section h2, .welcome-section h1 {
+  font-size: 22px;
+  color: #024b15;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 📌 Button Styling */
+.cta-button {
+  background-color: #024b15;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #016b10;
+  transform: scale(1.05);
+}
+
+/* 📌 Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .text-section, .welcome-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .home-banner {
+    max-width: 300px;
+  }
+}

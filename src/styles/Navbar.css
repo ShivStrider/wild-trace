@@ -1,0 +1,45 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #024b15; /* Green background */
+  padding: 10px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Left (Logo + Links) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 40px; /* Adjust size */
+  cursor: pointer;
+}
+
+/* Navbar Links */
+.nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white; /* Default White */
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Gold on hover */
+  text-decoration: underline;
+}
+
+/* Navbar Right (Login Button) */
+.navbar-right {
+  display: flex;
+}
+
+.navbar-right .nav-link {
+  margin-left: 20px;
+}
